@@ -8,7 +8,8 @@ function addMethod(obj, name, fn) {
 		// if method exists call it 
 		if ( !! method)
 			return method.apply(this, arguments);
-			else throw new Error("Wrong number of arguments");
+		else
+			throw new Error("Wrong number of arguments");
 	};
  
 	// initialize obj[name].cache
